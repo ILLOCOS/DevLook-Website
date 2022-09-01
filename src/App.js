@@ -1,41 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-import BasicExample from './components/navbar';
-import CarouselFadeExample from './components/hero';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import review from './components/review';
+import './App.css';
+import Navbarr from './components/navbar';
+import Carousel from './components/hero';
+import BasicExample from  './components/cardsu';
+import Review from './components/review';
+
 
 function App() {
   return (
     <>
     <nav>
-      <BasicExample />
+      <Navbarr />
     </nav>
+ <br/>
     <header>
-      <CarouselFadeExample />
+      <Carousel />
+      
     </header>
 
-    <review />
+    <Review />
     
     <main>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BasicExample />
+ 
     </main>
+
     <footer>
+
     </footer>
     </>
   );

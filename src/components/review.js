@@ -1,4 +1,5 @@
-function review() {
+import '../components/css/review.css'
+function Review() {
     return (
       <>
       <h2>Responsive Testimonials</h2>
@@ -16,6 +17,6 @@ function review() {
       </>
       );
   }
-  export default review;
+  export default Review;
 
       

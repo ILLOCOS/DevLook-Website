@@ -1,20 +1,26 @@
+import '../components/css/navbar.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 
-
-function BasicExample() {
+function Navbarr() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar collapseOnSelect expand="lg"  variant="dark" id="nav-cont">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Brand href="#home">PROJECT NAME</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto" id="nav-list">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <Nav.Link href="#careers">Find Talents</Nav.Link>
+            <Nav.Link href="#careers">Careers</Nav.Link>
+            <Nav.Link href="#aboutUs">About Us</Nav.Link>
+          
+            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -24,12 +30,36 @@ function BasicExample() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
+
           </Nav>
-        </Navbar.Collapse>
+{/* 
+          <Nav>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+            </Nav.Link>
+          </Nav>*/}
+       
+
+        <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+           /> 
+            <Button variant="outline-secondary" className="searchbtn">Search</Button> 
+          </Form>
+
+      <Button variant="light" className='signInBtn'>Sign In</Button>
+      {/* <Button variant="light" className='joinBtn'>Join</Button> */}
+
+      
+ </Navbar.Collapse> 
       </Container>
     </Navbar>
   );
 }
 
-export default BasicExample;
+export default Navbarr;
