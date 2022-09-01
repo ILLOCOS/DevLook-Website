@@ -13,7 +13,6 @@ function App() {
     <nav>
       <Navbarr />
     </nav>
- <br/>
     <header>
       <Carousel />
     </header>

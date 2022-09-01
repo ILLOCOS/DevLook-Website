@@ -5,7 +5,7 @@ import './css/cardsu.css'
 
 function BasicExample() {
   return (
-    <Card className = "card" style={{ width: '18rem',backgroundImage:'src={Himage3 }'}}>
+    <Card className = "card" style={{ width: '18rem'}}>
     
       <Card.Body className = "card-content">
         <Card.Title className = "card-title">Card Title</Card.Title>
