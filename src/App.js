@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import BasicExample from './components/navbar';
+import CollapsibleExample from './components/navbar';
 import Carousel from './components/hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,9 +9,9 @@ function App() {
   return (
     <>
     <nav>
-      <BasicExample />
+      <CollapsibleExample />
     </nav>
-
+ 
     <header>
       <Carousel />
     </header>
