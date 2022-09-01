@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbarr from './components/navbar';
 import Carousel from './components/hero';
+import BasicExample from  './components/cardsu';
 
 
 
