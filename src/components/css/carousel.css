@@ -1,4 +1,9 @@
-.carousel-caption { 
+.CC1 { 
 
-   color: black;
+   color: pink;
+   bottom: 20rem;
+   right: 50rem;
+}
+h1{
+   font-size: 50px;
 }

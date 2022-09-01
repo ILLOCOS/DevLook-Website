@@ -3,7 +3,7 @@ import './App.css';
 import CollapsibleExample from './components/navbar';
 import Carousel from './components/hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import BasicExample from  './components/cardsu';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
     </header>
     
     <main>
+      <BasicExample />
  
     </main>
 
