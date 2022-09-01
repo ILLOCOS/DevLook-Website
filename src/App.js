@@ -1,17 +1,18 @@
 import React from 'react';
-import './App.css';
-import CollapsibleExample from './components/navbar';
-import Carousel from './components/hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import Navbarr from './components/navbar';
+import Carousel from './components/hero';
+
 
 
 function App() {
   return (
     <>
     <nav>
-      <CollapsibleExample />
+      <Navbarr />
     </nav>
- 
+ <br/>
     <header>
       <Carousel />
     </header>

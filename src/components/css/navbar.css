@@ -1,0 +1,35 @@
+.navbar {
+    background-color: rgb(0, 0, 24);
+}
+
+.me-auto {
+    justify-content:space-around;
+    margin-left: auto;
+}
+
+.nav-link {
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.input-group {
+    width:25%;
+    margin-right: 10px;
+}
+
+.me-2{
+    border-radius: 0%;
+}
+
+.btn-outline-secondary {
+    margin: 0px 10px 0px -10px;
+    border-radius: 0%;
+}
+
+.signInBtn {
+    margin-left: 15px;
+}
+
+.joinBtn {
+    margin: 0 5px ;
+}
