@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import CollapsibleExample from './components/navbar';
-import CarouselFadeExample from './components/hero';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Carousel from './components/hero';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -11,13 +11,13 @@ function App() {
     <nav>
       <CollapsibleExample />
     </nav>
-{/* 
+ 
     <header>
-      <CarouselFadeExample />
-    </header> */}
+      <Carousel />
+    </header>
     
     <main>
-    
+ 
     </main>
 
     <footer>
