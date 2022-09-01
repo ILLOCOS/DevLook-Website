@@ -3,7 +3,7 @@ import './App.css';
 import BasicExample from './components/navbar';
 import CarouselFadeExample from './components/hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import review from './components/review';
 
 function App() {
   return (
@@ -11,10 +11,11 @@ function App() {
     <nav>
       <BasicExample />
     </nav>
-
     <header>
       <CarouselFadeExample />
     </header>
+
+    <review />
     
     <main>
     <div className="App">
@@ -34,13 +35,9 @@ function App() {
       </header>
     </div>
     </main>
-
     <footer>
-
     </footer>
-
     </>
   );
 }
-
 export default App;
