@@ -1,26 +1,27 @@
 import Carousel from 'react-bootstrap/Carousel';
-
+import Himage from "./Images/cpic1.jpg";
+import Himage2 from "./Images/cpic2.jpg";
+import Himage3 from "./Images/cpic3.jpg";
+import "./css/carousel.css";
 
 function CarouselFadeExample() {
   return (
     <Carousel fade>
       <Carousel.Item interval={1000}>
 
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
-        />
-        <Carousel.Caption>
+      <img  className="d-block w-100" style={{height:'100vh',width:'100%'}} src={Himage }  alt="First slide"/>
+
+        <Carousel.Caption className = "c_cap" >
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item interval={1000}>
 
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          style={{height:'100vh',width:'100%'}} src={Himage2 }
           alt="Second slide"
         />
 
@@ -34,7 +35,7 @@ function CarouselFadeExample() {
 
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          style={{height:'100vh',width:'100%'}} src={Himage3 }
           alt="Third slide"
         />
 
