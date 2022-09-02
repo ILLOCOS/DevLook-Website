@@ -1,5 +1,5 @@
 .card{
-    color: var(--clr-neutral-100);
+    color: green;
     padding: 10rem 0rem 0rem 0rem;
     max-width: 45ch;
     border-radius: 0.5rem;
@@ -27,7 +27,7 @@
     position: relative;
     width: max-content;
     font-size: 1.5rem;
-    text-shadow: 3px 3px #000000;
+    text-shadow: 2px 2px #000000;
 }
 
 .card-title::after{
@@ -37,7 +37,7 @@
     left: calc(var(--padding) * -1 );
     bottom:-3px;
     width:calc(100% + var(--padding));
-    background: var(--clr-accent-400);
+    background:rgb(9, 37, 162);
     transform-origin: left;
     transition: transform 500ms ease;
 
