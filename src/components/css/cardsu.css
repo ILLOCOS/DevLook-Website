@@ -1,10 +1,14 @@
 .card{
     color: green;
     padding: 10rem 0rem 0rem 0rem;
-    max-width: 45ch;
-    border-radius: 0.5rem;
+    max-width: 30ch;
+    /* border-radius: 0.5rem; */
     overflow:hidden;
     transition:transform 500ms ease;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    height: 50ch;
+    margin-right: 10rem;
+
 }
 
 .card:hover,.card:focus-within{
@@ -13,7 +17,7 @@
 
 }
 .card-content{
-    --padding: 0.5rem;
+    --padding: .5rem;
     padding: var(--padding);
     background: linear-gradient(
         hsl(0 0% 0%/ 0),
@@ -21,25 +25,29 @@
         hsl(0 0% 0%/ 1)
     );
     height:100%;
+    text-align:center;
 }
 
 .card-title{
     position: relative;
+    text-align:center;
     width: max-content;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px #000000;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #000000;
+    text-transform:uppercase;
+    color:white
 }
 
 .card-title::after{
     content: "";
     position: absolute;
     height:4px;
-    left: calc(var(--padding) * -1 );
+    left: calc(var(--padding) * -.5 );
     bottom:-3px;
     width:calc(100% + var(--padding));
-    background:rgb(9, 37, 162);
-    transform-origin: left;
-    transition: transform 500ms ease;
+    background:rgb(15, 98, 167);
+    transform-origin: center;
+    transition: transform 500ms ease-in-out;
 
 }
 
