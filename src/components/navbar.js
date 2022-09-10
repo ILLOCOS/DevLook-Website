@@ -8,7 +8,7 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import React from 'react';
 //import InputGroup from 'react-bootstrap/InputGroup';
-import logoo1 from '../components/images/logoo2.png'
+import logoo1 from '../components/Images/logoo2.png'
 import Image from 'react-bootstrap/Image'
 import { Link } from "react-router-dom";
 

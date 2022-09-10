@@ -5,8 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Stack from 'react-bootstrap/Stack';
 import Image from 'react-bootstrap/Image'
 import Table from 'react-bootstrap/Table';
-import hwC from '../components/images/hwC...jpg'
-import hwT from '../components/images/hwC.jfif'
+import hwC from '../components/Images/hwC...jpg'
+import hwT from '../components/Images/hwC.jfif'
 import Button from 'react-bootstrap/Button';
 
 function Feat2p2() {

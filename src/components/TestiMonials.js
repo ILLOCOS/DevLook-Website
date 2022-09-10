@@ -3,12 +3,12 @@ import TestiMonialsDetails from './TestiMonialsDetails'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import userPic from './images/crcc.jpg';
+import userPic from './Images/crcc.jpg';
 import './css/TestiMonials.css';
-import Emilia from './images/emilia.jpg';
-import Elon from './images/elon.jpg';
-import Bill from './images/bill.jpg';
-import KimK from './images/kimk.webp';
+import Emilia from './Images/emilia.jpg';
+import Elon from './Images/elon.jpg';
+import Bill from './Images/bill.jpg';
+import KimK from './Images/kimk.webp';
 
 
 const TestiMonials = () => {

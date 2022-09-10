@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Himage from "./images/pandt.jpg";
+import Himage from "./Images/pandt.jpg";
 import './css/cardsu.css'
 import React from 'react';
 
