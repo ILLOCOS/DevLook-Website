@@ -5,20 +5,57 @@ import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
+import Modal from 'react-bootstrap/Modal';
+import React from 'react';
+//import InputGroup from 'react-bootstrap/InputGroup';
+import logoo1 from '../components/images/logoo2.png'
+import Image from 'react-bootstrap/Image'
+import { Link } from "react-router-dom";
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Modal heading
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
 function Navbarr() {
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <Navbar collapseOnSelect expand="lg"  variant="dark" id="nav-cont" className='h-navbar'>
       <Container>
-        <Navbar.Brand href="#home">PROJECT NAME</Navbar.Brand>
+        <Navbar.Brand href="#">
+            <Image className="logo" src={logoo1} responsive/>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" id="nav-list">
-            <Nav.Link href="#home" className='navlinkk'>Home</Nav.Link>
-            <Nav.Link href="#careers" className='navlinkk'>Find Talents</Nav.Link>
-            <Nav.Link href="#careers" className='navlinkk'>Careers</Nav.Link>
-            <Nav.Link href="#aboutUs" className='navlinkk'>About Us</Nav.Link>
+            <Link to="/" className='navlinkk'>Home</Link>
+            <Nav.Link href="#findTalents" className='navlinkk'>Find Talents</Nav.Link>
+            <Nav.Link href="#joinTeam" className='navlinkk'>Join our Team</Nav.Link>
+            <Link to="/seemore" className='navlinkk'>About Us</Link>
           
             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -42,19 +79,32 @@ function Navbarr() {
           </Nav>*/}
        
 
-        <Form className="d-flex">
+        {/* <Form className="d-flex">y
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="Search for Services/Talents "
               className="me-2" 
               id="searchbar"
               aria-label="Search"
            /> 
             <Button variant="outline-secondary" className="searchbtn">Search</Button> 
-          </Form>
+          </Form> */}
 
-      <Button variant="light" className='signInBtn'>Sign In</Button>
+      {/* <Button variant="light" className='signInBtn'>Sign In</Button> */}
       {/* <Button variant="light" className='joinBtn'>Join</Button> */}
+
+    <>
+      <Button variant="light" className='signInBtn' onClick={() => setModalShow(true)}>
+       Log in
+      </Button>
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </>
+
+
 
 
  </Navbar.Collapse> 

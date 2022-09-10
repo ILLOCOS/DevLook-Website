@@ -1,0 +1,16 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.grid_container{
+    margin-top: 5rem;
+    display:inline-grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0rem 10rem 0rem 10rem;
+    column-gap: 2rem;
+}
+
+
