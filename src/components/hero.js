@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Himage from "./images/cpic1.jpg";
-import Himage2 from "./images/cpic2.jpg";
-import Himage3 from "./images/cpic3.jpg";
+import Himage from "./Images/cpic1.jpg";
+import Himage2 from "./Images/cpic2.jpg";
+import Himage3 from "./Images/cpic3.jpg";
 import Form from 'react-bootstrap/Form';
 import "./css/carousel.css";
 import Button from 'react-bootstrap/Button';
