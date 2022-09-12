@@ -13,7 +13,7 @@
   input[type="text"],
   input[type="password"] {
     height: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(13, 228, 235, 0.2);
   }
   
   input[type="submit"] {
@@ -21,13 +21,13 @@
     cursor: pointer;
     font-size: 15px;
     background: #01d28e;
-    border: 1px solid #01d28e;
-    color: #fff;
+    border: 1px solid #1613e7;
+    color: rgb(20, 140, 184);
     padding: 10px 20px;
   }
   
   input[type="submit"]:hover {
-    background: #6cf0c2;
+    background: #0c1fd0;
   }
   
   .button-container {
@@ -36,9 +36,9 @@
   }
   
   .login-form {
-    background-color: white;
+    background-color: rgb(59, 167, 217);
     padding: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(14, 133, 223, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .list-container {
@@ -46,7 +46,7 @@
   }
   
   .error {
-    color: red;
+    color: rgb(23, 142, 206);
     font-size: 12px;
   }
   
