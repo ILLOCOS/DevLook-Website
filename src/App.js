@@ -21,6 +21,9 @@ import {
 import Seemore from "./components/seemorepage";
 import Home from "./components/Home"
 
+//marxenion
+import Footer from './components/footer'
+
 
 
 
@@ -103,7 +106,7 @@ function App() {
     </main>
     </Routes> */}
     <footer>
-
+    <Footer />
     </footer>
     </>
     
