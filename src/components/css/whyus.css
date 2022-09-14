@@ -59,3 +59,20 @@
     font-weight: 100;
     font-size: 20px;
 }
+
+.seebtn , .seebtn a {
+    text-decoration: none;
+    color: #838c93;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    border: 1px solid #9ba2a7;
+    background-color: none;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.seebtn:hover {
+    color: white;
+    background-color: #838c93;
+}

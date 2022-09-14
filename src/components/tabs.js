@@ -1,5 +1,9 @@
+import '../components/css/tabs.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 import {
     BrowserRouter as Router,
     Routes,
@@ -11,19 +15,19 @@ import {
 
   
 function TabsProto() {
-  return (
+  return (   
    <Router>
-    <Tabs
+    <Tabs 
       defaultActiveKey="profile"
       id="justify-tab-example"
       className="mb-3"
       justify
         >
       <Tab eventKey="client" title="Client">
-      <Link to="/">Clients</Link>
+      <Link to="/"> CLIENTS</Link>
       </Tab>
       <Tab eventKey="talent" title="Talent">
-      <Link to="/talent">Talents</Link>
+      <Link to="/talent">TALENTS</Link>
       </Tab>
       <Routes>
           <Route exact path="/" element={<Clients />}/>
@@ -35,6 +39,7 @@ function TabsProto() {
     </Tabs>
     </Router>
   );
+  
 }
 function Clients() {
     return (

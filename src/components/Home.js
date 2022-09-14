@@ -51,7 +51,7 @@ function Home() {
  
     
     <main>
-   
+     <HeroSection />
         <div className="tag">
             <CardGrid />
             <div className="App">

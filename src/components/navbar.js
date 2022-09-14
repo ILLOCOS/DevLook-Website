@@ -95,7 +95,7 @@ function Navbarr() {
 
     <>
       <Button variant="light" className='signInBtn' onClick={() => setModalShow(true)}>
-       Log in
+          <i class="fa fa-user"></i> Log in
       </Button>
 
       <MyVerticallyCenteredModal

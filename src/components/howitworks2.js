@@ -8,16 +8,22 @@ import Table from 'react-bootstrap/Table';
 import hwC from '../components/Images/hwC...jpg'
 import hwT from '../components/Images/hwC.jfif'
 import Button from 'react-bootstrap/Button';
+import { useNavigate } from "react-router-dom";
 
 function Feat2p2() {
+  let navigate = useNavigate();
   return (
     <Container >
       <Row xs={1} md={2}>
         <Col lg={8} className='hw-head'>For Clients
         <Stack gap={1}>
-          <div className="satck bg-light border">First item</div>
-          <div className="satck bg-light border">Second item</div>
-          <div className="satck bg-light border">Third item</div>
+          <div className="satck bg-light border">
+            <b>1. </b>Meet with the Talent Acquisition Team
+            </div>
+          <div className="satck bg-light border"> <b>2. </b>Receive a Shortlist
+          </div>
+          <div className="satck bg-light border"> <b>3. </b>Choose the Perfect Fit
+          </div>
       </Stack>
     </Col>
         <Col lg={4} className='hw-head'>
@@ -94,10 +100,14 @@ function Feat2p2() {
 
       <br/>
       <Row>
-          <Button variant="outline-secondary" className="seebtn">See More</Button> 
+      <button  className="seebtn"  onClick={() =>{
+          navigate("/seemore");
+        }} >
+          See More
+        </button>
+          {/* <Button variant="outline-secondary" className="seebtn">See More</Button>  */}
       </Row>
-      <br/>  <br/>  <br/>
-
+      <br/>  <br/>  
     </Container>
 
   );
