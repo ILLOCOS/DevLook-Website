@@ -1,6 +1,14 @@
+
+
 .h-navbar {
     background-color: #030332;
-}
+    position: fixed;
+    z-index: 10;
+    margin:0;
+    width: 100%;
+    align-items: center;
+    /* margin-top:-20px; */
+} 
 
 .logo {
     height: auto;
@@ -22,6 +30,7 @@
     color: white;
     font-size: 18px;
     letter-spacing: .3px;
+    text-decoration: none;
     /* border: 2px solid red; */
 }
 

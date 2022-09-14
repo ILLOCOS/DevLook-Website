@@ -60,7 +60,7 @@ function App() {
     </nav>
 
     <header>
-      <HeroSection />
+    {/* <HeroSection /> */}
     </header>
     <main>
       {/* <Home /> */}
