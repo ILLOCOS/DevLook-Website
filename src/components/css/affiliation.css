@@ -1,0 +1,22 @@
+.affil-container {
+  margin: 2vh auto 10vh auto;
+}
+
+.affil-wrapper {
+  margin-bottom: 50px;
+}
+
+.affil-heading {
+  text-align: center;
+  color: #0e76a8;
+  font-family: Arial;
+}
+
+.affil-paragraph {
+  text-align: center;
+}
+
+.affil-logo {
+  margin: 5vh auto;
+  display: block;
+}/*# sourceMappingURL=affiliation.css.map */
