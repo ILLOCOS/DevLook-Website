@@ -7,7 +7,7 @@ import{
     Clients, Talents} from './tabs';
     // import {ClientInfo, TalentInfo} from './seemorepages2'
 
-function Clientelle() {
+function Talented() {
   // const DEFAULT_ACTIVE_TAB = "Client";
   // const {active_tab} = useParams();
   // const history = useNavigate();
@@ -27,22 +27,22 @@ function Clientelle() {
   return (
     
     <Tabs
-      defaultActiveKey="client" id="btn1" className="btn1" 
-      justify >
-   
+    defaultActiveKey="talent" id="btn1" className="btn1" 
+    justify >
+ 
 
-    
-      <Tab eventKey="client" title="CLIENTS" className="slide">
+  
+    <Tab eventKey="client" title="CLIENTS" className="slide">
 
-        <Clients />
-        
-       
-      </Tab>
+      <Clients />
+      
+     
+    </Tab>
 
-      <Tab eventKey="talent" title="TALENTS" className="slide">
+    <Tab eventKey="talent" title="TALENTS" className="slide">
 
-      <Talents />
-      </Tab>
+    <Talents />
+    </Tab>
 
 
       {/* <Tab eventKey="longer-tab" title="Loooonger Tab">
@@ -55,4 +55,4 @@ function Clientelle() {
   );
 }
 
-export default Clientelle;
+export default Talented;
