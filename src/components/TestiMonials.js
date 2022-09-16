@@ -17,13 +17,13 @@ const TestiMonials = () => {
         {
             name: 'Elon Musk',
             description: '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s."',
-            address: 'Tesla Ceo',
+            address: 'CEO - Tesla',
             img: Elon
         },
         {
             name: 'Bill Gates',
             description: '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s."',
-            address: 'Microsoft Ceo',
+            address: 'CEO - Microsoft',
             img: Bill
         },
         {
@@ -65,11 +65,11 @@ const TestiMonials = () => {
     return (
         <section id="testimonial" className="testimonials pt-70 pb-70">
             <div className="container mt-5">
-                <h4 className="miniTitle text-center">TESTIMONIALS</h4>
+                <h2 className="miniTitle text-center">TESTIMONIALS</h2>
                 <div className="text-center ">
-                    <h3 className="sectionTitle">What Our Clients are Saying?</h3>
+                    <h3 className="sectionTitle">Know what Our Clients are Saying!</h3>
                 </div>
-                <p className="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                
                 <div className="row">
                     <div className="col-md-12">
                         <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>

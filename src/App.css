@@ -49,6 +49,11 @@
   background-position: 50% 0;
 
 } */
+* , html {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
 
 .tag {
   opacity: 0;

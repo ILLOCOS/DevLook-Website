@@ -19,8 +19,10 @@ import {
   Route,
 } from "react-router-dom";
 import Seemore from "./components/seemorepage";
-import Home from "./components/Home"
-
+import Home from "./components/Home";
+import AboutUs from "./components/about";
+import Affiliation from "./components/affiliation";
+import Footer from './components/footer';
 
 function App() {
 // When the user begins to scroll, the code detects the top and bottom of the viewport, then checks each tag section element for whether the tag is inside the viewport (i.e., visible on the screen).
@@ -52,14 +54,18 @@ function App() {
     </nav>
 
     <header>
-      <HeroSection />
+    {/* <HeroSection /> */}
     </header>
     <main>
       {/* <Home /> */}
       <Routes>
         
-    <Route path="/seemore" element={ <Seemore/> } />
+    
     <Route path="/" element={ <Home/> } />
+    <Route path="/aboutus" element={ <AboutUs/> } />
+    <Route path="/seemore" element={ <Seemore/> } />
+    
+    
       </Routes>
     </main>
 
@@ -97,7 +103,10 @@ function App() {
     </main>
     </Routes> */}
     <footer>
-
+      <div className="tag">
+      <Affiliation/>
+          <Footer />
+      </div>
     </footer>
     </>
     
