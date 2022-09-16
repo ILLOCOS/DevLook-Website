@@ -5,14 +5,14 @@ import Col from 'react-bootstrap/Col';
 import Talented from './tabs3'; 
 import React from 'react'
 import bv from '../components/Images/bv2.mp4'
-
+import bt from '../components/Images/bt.mp4'
 function Talent() {
   return (
     <>
   <header>
     <div className="hero2">
     <video loop muted autoPlay playsInline className='bv'>
-        <source src={bv} type="video/mp4" />
+        <source src={bt} type="video/mp4" />
       </video>
     </div>
     
