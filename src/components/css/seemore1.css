@@ -198,3 +198,41 @@
     display: flex;
     margin: 10% auto 0 auto;
 }
+.abouts{
+    border: 7px double rgb(230, 227, 227);
+   
+    padding-top: 50px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+    z-index: -99;
+}
+.abt {
+    background-color: #030332;
+    color:whitesmoke;
+    border-radius: 10px;
+    box-shadow: 4px 6px 3px #0a0a0a8b;
+    padding: 1rem;
+}
+.abouts h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .15em; 
+    text-align: center;
+    text-shadow: 3px 3px 3px #0a0a0a71;
+}
+.abtp {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 18px;
+    padding-right: 10px;
+    text-shadow: 3px 3px 4px #0a0a0a10;
+}
+.abth {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .7px;
+    text-transform:uppercase; 
+}

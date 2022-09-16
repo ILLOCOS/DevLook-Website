@@ -28,8 +28,8 @@ function JustifiedExample() {
     
     <Tabs
       defaultActiveKey="client" id="btn1" className="btn1" 
-      justify
-    >
+      justify >
+   
 
     
       <Tab eventKey="client" title="CLIENTS" className="slide">
@@ -39,7 +39,7 @@ function JustifiedExample() {
        
       </Tab>
 
-      <Tab eventKey="talent" title="TALENTS">
+      <Tab eventKey="talent" title="TALENTS" className="slide">
 
       <Talents />
       </Tab>
