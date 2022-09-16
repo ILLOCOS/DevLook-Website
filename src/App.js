@@ -19,11 +19,9 @@ import {
   Route,
 } from "react-router-dom";
 import Seemore from "./components/seemorepage";
-import Home from "./components/Home"
-
-//marxenion
-import Footer from './components/footer'
-
+import Home from "./components/Home";
+import AboutUs from "./components/about";
+import Footer from './components/footer';
 
 
 
@@ -66,8 +64,11 @@ function App() {
       {/* <Home /> */}
       <Routes>
         
-    <Route path="/seemore" element={ <Seemore/> } />
+    
     <Route path="/" element={ <Home/> } />
+    <Route path="/aboutus" element={ <AboutUs/> } />
+    <Route path="/seemore" element={ <Seemore/> } />
+    
       </Routes>
     </main>
 
@@ -106,7 +107,9 @@ function App() {
     </main>
     </Routes> */}
     <footer>
-    <Footer />
+      <div className="tag">
+          <Footer />
+      </div>
     </footer>
     </>
     

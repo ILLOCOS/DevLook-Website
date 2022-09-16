@@ -11,12 +11,16 @@ import {
 
 //style
 import './css/footer.css'
+import Container from 'react-bootstrap/esm/Container';
+// import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function footer() {
   return (
     <MDBFooter className='footer_container text-center' color='white'>
       <MDBContainer className='p-4'>
-        <p className='pt-2'>
+        <p className='pt-2' id='topp'>
           <strong>Keep in touch with us</strong>
         </p>
         <section className='mb-4'>
@@ -49,8 +53,8 @@ export default function footer() {
           <form action=''>
             <MDBRow className='d-flex justify-content-center'>
               <MDBCol size="auto">
-                <p className='pt-2'>
-                  <strong>Sign up for our free newsletter</strong>
+                <p className='pt-2'  id='mail'>
+                  <strong>Sign up to receive great offers and event updates straight to your mailbox!</strong>
                 </p>
               </MDBCol>
 
@@ -74,12 +78,39 @@ export default function footer() {
             sequi voluptate quas.
           </p>
         </section>
+<hr/>
+        <section className='mb-4' >
+          <Container>
+            <Row>
+              <h5 className='text-uppercase' id='cont'>CONTACT US</h5>
+            </Row>
+            <Row>
+              <Col lg='4' md='5' className='mb-4 mb-md-0' id='col2'>
+                <a href='#!' className='text-white'>
+                  <i class="fa fa-mobile"> </i> +63(2)4171267 / +63(918)8792611  <br/> 
+                  <i class="fa fa-phone"> </i> (02) 536-6510 / (02) 536-6511 
+                  </a>
+              </Col>
+              <Col lg='4' md='5' className='mb-4 mb-md-0' id='col2'>
+              <a href='#!' className='text-white'>
+              <i class="fa fa-envelope"></i> quantacell.ph@gmail.com
+                  </a>
+              </Col>
+              <Col lg='4' md='5' className='mb-4 mb-md-0' id='col2'>
+              <a href='#!' className='text-white'>
+                  <i class="fa fa-map-marker"></i>  8th Avenue cor. 35th Street, North Bonifacio Triangle,  Bonifacio Global City, Taguig City 1635
+                  </a>
+              </Col>
+            </Row>
+          </Container>
+        </section>
 
+      <hr/>
         <section className=''>
           <MDBRow>
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
+            <MDBCol lg='3' md='5' className='mb-4 mb-md-0'>
+              <h5 className='text-uppercase'>Quantacell</h5>
+            <p className='ul-p'> 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
@@ -93,7 +124,7 @@ export default function footer() {
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Career
+                    Join our Team
                   </a>
                 </li>
                 <li>
@@ -101,97 +132,99 @@ export default function footer() {
                     About Us
                   </a>
                 </li>
-              </ul>
+              </ul></p>
             </MDBCol>
 
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
+            <MDBCol lg='3' md='5' className='mb-4 mb-md-0'>
+              <h5 className='text-uppercase'>For the Clients</h5>
+              <p className='ul-p'> 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                    Why Work with Us
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                    How Does it Work
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                  Client TestiMonials
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                  FAQ
                   </a>
                 </li>
-              </ul>
+              </ul></p>
             </MDBCol>
 
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
+            <MDBCol lg='3' md='5' className='mb-4 mb-md-0'>
+              <h5 className='text-uppercase'>For the Talents</h5>
+              <p className='ul-p'> 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                    Why Join Our Team
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                    How Do I Start
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                    Success Stories
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                    FAQ
                   </a>
                 </li>
-              </ul>
+              </ul></p>
             </MDBCol>
 
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>CONTACTS</h5>
-
+            <MDBCol lg='3' md='5' className='mb-4 mb-md-0'>
+              <h5 className='text-uppercase'>RESOURCES</h5>
+              <p className='ul-p'> 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                   Privacy Policy
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                  Fees and Charges
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                  Help and Support
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                  Terms of Service
                   </a>
                 </li>
-              </ul>
+              </ul></p>
             </MDBCol>
+
+
           </MDBRow>
         </section>
       </MDBContainer>
 
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      <div className='text-center p-3' id='copyryt'>
         © 2022 Copyright:
         <a className='text-white' href='index.html'>
-        <span> DevLook.com by</span>
+        <span> QuantaCell.com by</span>
         </a>
         <span> Audax, Ebenezer, Mark Nixon, and Princess</span>
       </div>

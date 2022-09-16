@@ -24,7 +24,7 @@ function HeroSection() {
               className="me-2"
               aria-label="Search"
             />
-            <Button className="car-searchbtn" variant="outline">Search</Button>
+            <Button className="car-searchbtn" variant="outline" id='car-searchbtn'>Search</Button>
           </Form>
         </Carousel.Caption>
       </Carousel.Item>
@@ -47,7 +47,7 @@ function HeroSection() {
               className="me-2"
               aria-label="Search"
             />
-            <Button className="car-searchbtn" variant="outline"> Search</Button>
+            <Button className="car-searchbtn" variant="outline" id='car-searchbtn'> Search</Button>
           </Form>
         </Carousel.Caption>
       </Carousel.Item>
@@ -72,7 +72,7 @@ function HeroSection() {
               className="me-2"
               aria-label="Search"
             />
-            <Button className="car-searchbtn" variant="outline">Search</Button>
+            <Button className="car-searchbtn" variant="outline" id='car-searchbtn'>Search</Button>
           </Form>
         </Carousel.Caption>
       </Carousel.Item>

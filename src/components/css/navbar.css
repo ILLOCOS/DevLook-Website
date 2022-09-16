@@ -66,17 +66,19 @@
     border-radius: 0%;
 }
 
-.signInBtn {
+#signinbtn {
     margin-left: 15px;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: .3px;
+    /* color:#030332;
+    background-color: antiquewhite; */
 }
 
-.signInBtn:hover {
+#signinbtn:hover {
     text-transform: uppercase;
-    background-color: #16415bce;
+    background-color: #285977ce;
     border-radius: 5px;
-    padding: 5px;
+    /* padding: 5px; */
     font-weight: 500;
     color: white
 }
