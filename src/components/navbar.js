@@ -11,7 +11,6 @@ import React from 'react';
 import logoo1 from '../components/Images/logoo2.png'
 import Image from 'react-bootstrap/Image'
 import { Link } from "react-router-dom";
-
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal
@@ -26,12 +25,13 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
+        {/* <h4>Centered Modal</h4>
         <p>
           Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
           dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
           consectetur ac, vestibulum at eros.
-        </p>
+        </p> */}
+        <login />
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -46,7 +46,7 @@ function Navbarr() {
   return (
     <Navbar collapseOnSelect expand="lg"  variant="dark" id="nav-cont" className='h-navbar'>
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
             <Image className="logo" src={logoo1} responsive/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -55,7 +55,7 @@ function Navbarr() {
             <Link to="/" className='navlinkk'>Home</Link>
             <Nav.Link href="#findTalents" className='navlinkk'>Find Talents</Nav.Link>
             <Nav.Link href="#joinTeam" className='navlinkk'>Join our Team</Nav.Link>
-            <Link to="/seemore" className='navlinkk'>About Us</Link>
+            <Link to="/aboutus" className='navlinkk'>About Us</Link>
           
             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -94,8 +94,8 @@ function Navbarr() {
       {/* <Button variant="light" className='joinBtn'>Join</Button> */}
 
     <>
-      <Button variant="light" className='signInBtn' onClick={() => setModalShow(true)}>
-       Log in
+      <Button  variant="light" className='signInBtn' id='signinbtn' onClick={() => setModalShow(true)}>
+          <i class="fa fa-user"></i> Log in
       </Button>
 
       <MyVerticallyCenteredModal
