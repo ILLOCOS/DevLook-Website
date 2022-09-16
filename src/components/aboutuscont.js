@@ -6,45 +6,47 @@ import React from 'react';
 
 function AboutUsContent() {
   return (
-   
+    
+    <div className='abouts'>
     <Container style={{paddingTop: "10rem"}}>
       <Stack gap={5}>
 
       <Row>
-        <Col lg={true} style={{textAlign:"center"}}><h1>About US</h1></Col>
+        <Col lg={true} className="head"><h1>About Us</h1></Col>
         
       </Row>
-      <Container fluid="lg" style={{backgroundColor:"gray"}}>
+      <Container fluid="lg" className="abt">
 
       <Row>
       <Col gap={1} lg={true}>
       <div > 
-      Assured Services
-       <p >We guarantee only the best Service</p>
+      <h4 className = "abth">Assured Services</h4>
+       <p className="abtp">We guarantee only the best Service</p>
       </div>
         </Col>
       <Col gap={1} lg={true}>
       <div > 
-      Worldwide Clients
-      <p >We are trusted by Clients Globally</p>
+      <h4 className = "abth">Worldwide Clients</h4>
+      <p className="abtp" >We are trusted by Clients Globally</p>
       </div>
         </Col>
       <Col gap={1} lg={true}>
       <div > 
-     Go-To Talent and Service Provider
-      <p >The number 1 place for tech services and talents</p>
+      <h4 className = "abth">Go-To Talent and Service Provider</h4>
+      <p className="abtp" >The number 1 place for tech services and talents</p>
      </div>
         </Col>
       <Col gap={1} lg={true}>
         <div > 
-    It's All About The Customer
-    <p > Here at Quantacell we put the customers first and we guarantee your satsifaction</p>
+        <h4 className = "abth">It's All About The Customer</h4>
+    <p className="abtp" > Here at Quantacell we put the customers first and we guarantee your satsifaction</p>
     </div>
       </Col>
       </Row>
       </Container>
+      
       <Row>
-    
+      
           <Col gap={1} lg={true}>
             <Stack gap={5}>
               <div className="stackk "> <i class="fa fa-check-square-o" aria-hidden="true"></i> Creating Ideas with Passion
@@ -72,6 +74,9 @@ function AboutUsContent() {
       </Stack>
           
     </Container>
+    </div>
+
+   
   
   );
 }

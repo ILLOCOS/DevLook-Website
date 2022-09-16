@@ -46,7 +46,7 @@ function Navbarr() {
   return (
     <Navbar collapseOnSelect expand="lg"  variant="dark" id="nav-cont" className='h-navbar'>
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
             <Image className="logo" src={logoo1} responsive/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
