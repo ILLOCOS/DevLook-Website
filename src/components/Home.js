@@ -11,6 +11,7 @@ import CardGrid from './cardgrid';
 // import BasicExample from  './components/cardsu';
 import TestiMonials from './TestiMonials';
 import $ from 'jquery';
+import Affiliation from "./affiliation";
 import JustifiedExample from './tabs2'; 
 import ResponsiveAutoExample from'./seemorepage.js';
 // import {
@@ -78,6 +79,7 @@ function Home() {
 
       <div className="tag">
       <TestiMonials></TestiMonials>
+      <Affiliation/>
       </div>
     </main>
     
