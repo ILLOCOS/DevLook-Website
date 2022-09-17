@@ -21,7 +21,6 @@ import Client from "./components/client";
 import Talent from "./components/Talent";
 import Home from "./components/Home";
 import AboutUs from "./components/about";
-import Affiliation from "./components/affiliation";
 import Footer from './components/footer';
 
 
