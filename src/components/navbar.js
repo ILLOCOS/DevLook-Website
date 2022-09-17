@@ -13,7 +13,12 @@ import Image from 'react-bootstrap/Image'
 import { Link } from "react-router-dom";
 import Login from './Login2';
 import Register from './Register';
-import FormValidator from './FormValidator';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -35,11 +40,12 @@ function MyVerticallyCenteredModal(props) {
           dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
           consectetur ac, vestibulum at eros.
         </p> */}
+   <Login />
+        <Routes>
+             
+    <Route path="/Register" element ={<Register/>}/>
+    </Routes>
 
-        <Login />
-        <Register />
-        <FormValidator />
-      
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>

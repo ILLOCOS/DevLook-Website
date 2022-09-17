@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import FormValidator from './FormValidator';
-import './App.css';
+
 class App extends Component{
 constructor(){
 super();
@@ -81,7 +81,7 @@ return (
 <div className="row">
 <div className="col-md-4 col-md-offset-4">
 <form className="registrationForm">
-<h2>Registration form validation react js - Tutsmake.com</h2>
+<h2>Registration Form</h2>
 <div className={validation.email.isInvalid && 'has-error'}>
 <label htmlFor="full_name">Full Name</label>
 <input type="string" className="form-control" name="full_name" placeholder="Full Name" onChange={this.handleInputChange} /> <span className="help-block">{validation.full_name.message}</span> </div>

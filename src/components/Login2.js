@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
+import {Link} from "react-router-dom"
+
+import { useNavigate } from "react-router-dom";
+
+
+
 // import "./styles.css";
 import "./css/Login2.css";
 
 function Login() {
+
+  let navigate = useNavigate();
+
   // React States
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -72,8 +81,21 @@ function Login() {
         <div className="button-container">
           <input type="submit" />
         </div>
+
+        
+
+        <button  className="seebtn"  onClick={() =>{
+          navigate("/register");
+        }} >
+        register 
+        </button>
+
+
+
       </form>
+
     </div>
+
   );
 
   return (
