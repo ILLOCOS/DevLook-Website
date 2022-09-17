@@ -53,8 +53,8 @@ function Navbarr() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" id="nav-list">
             <Link to="/" className='navlinkk'>Home</Link>
-            <Nav.Link href="#findTalents" className='navlinkk'>Find Talents</Nav.Link>
-            <Nav.Link href="#joinTeam" className='navlinkk'>Join our Team</Nav.Link>
+            <Link to="/client" className='navlinkk'>Find Talents</Link>
+            <Link to="/talent" className='navlinkk'>Join our Team</Link>
             <Link to="/aboutus" className='navlinkk'>About Us</Link>
           
             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">

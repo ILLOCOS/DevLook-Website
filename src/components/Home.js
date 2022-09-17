@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
-import Navbarr from './navbar';
+// import Navbarr from './navbar';
 import Feat1 from './whyus'
 import Feat1p2 from './whyus2'
 import Feat2 from './howitworks'
@@ -14,6 +14,7 @@ import $ from 'jquery';
 import Affiliation from "./affiliation";
 import JustifiedExample from './tabs2'; 
 import ResponsiveAutoExample from'./seemorepage.js';
+
 // import {
 //   BrowserRouter as Router,
 //   Routes,
@@ -78,7 +79,6 @@ function Home() {
       </div>
 
       <div className="tag">
-      <TestiMonials></TestiMonials>
       <Affiliation/>
       </div>
     </main>
