@@ -1,5 +1,5 @@
 .affil-container {
-  margin: 10vh auto 10vh auto;
+  margin: 2vh auto 10vh auto;
 }
 
 .affil-wrapper {
@@ -8,17 +8,18 @@
 
 .affil-heading {
   font-size: 30px;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.25em;
-  text-align: center;
-  text-shadow: 3px 3px 3px rgba(10, 10, 10, 0.2862745098);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .12em;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .affil-paragraph {
   text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 100;
   font-size: 20px;
 }
 
