@@ -13,10 +13,10 @@ import { useNavigate } from "react-router-dom";
 function Feat2p2() {
   let navigate = useNavigate();
   return (
-    <Container >
+    <Container > 
       <Row xs={1} md={2}>
-        <Col lg={8} className='hw-head'>For Clients
-        <Stack gap={1}>
+        <Col lg={8} className='hw-head'><br/>For Clients
+        <Stack gap={2}>
           <div className="satck bg-light border">
             <b>1. </b>Meet with the Talent Acquisition Team
             </div>
@@ -89,8 +89,9 @@ function Feat2p2() {
                     </div>
            </div>
     </Col>
-        <Col lg={8} className='hw-head'>For Talents
-        <Stack gap={1}>
+
+        <Col lg={8} className='hw-head'><br/>For Talents
+        <Stack gap={2}>
           <div className="satck bg-light border">First item</div>
           <div className="satck bg-light border">Second item</div>
           <div className="satck bg-light border">Third item</div>
@@ -99,14 +100,14 @@ function Feat2p2() {
       </Row>
 
       <br/>
-      <Row>
+      {/* <Row>
       <button  className="seebtn"  onClick={() =>{
           navigate("/seemore");
         }} >
           See More
         </button>
-          {/* <Button variant="outline-secondary" className="seebtn">See More</Button>  */}
-      </Row>
+          {/* <Button variant="outline-secondary" className="seebtn">See More</Button>  </Row> */}
+      
       <br/>  <br/>  
     </Container>
 
