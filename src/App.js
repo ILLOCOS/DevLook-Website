@@ -2,23 +2,23 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbarr from './components/navbar';
-import Feat1 from './components/whyus'
-import Feat1p2 from './components/whyus2'
-import Feat2 from './components/howitworks'
-import Feat2p2 from './components/howitworks2'
-import HeroSection from './components/hero';
-import CardGrid from './components/cardgrid';
-// import BasicExample from  './components/cardsu';
-import TestiMonials from './components/TestiMonials';
+// import Feat1 from './components/whyus'
+// import Feat1p2 from './components/whyus2'
+// import Feat2 from './components/howitworks'
+// import Feat2p2 from './components/howitworks2'
+// import HeroSection from './components/hero';
+// import CardGrid from './components/cardgrid';
+ // import BasicExample from  './components/cardsu';
+// import TestiMonials from './components/TestiMonials';
 import $ from 'jquery';
 import JustifiedExample from './components/tabs2'; 
-import ResponsiveAutoExample from'./components/seemorepage.js';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
-import Seemore from "./components/seemorepage";
+import Client from "./components/client";
+import Talent from "./components/Talent";
 import Home from "./components/Home";
 import AboutUs from "./components/about";
 import Footer from './components/footer';
@@ -62,7 +62,8 @@ function App() {
     
     <Route path="/" element={ <Home/> } />
     <Route path="/aboutus" element={ <AboutUs/> } />
-    <Route path="/seemore" element={ <Seemore/> } />
+    <Route path="/client" element={ <Client/> } />
+    <Route path="/talent" element={ <Talent/> } />
     
     
       </Routes>
@@ -101,6 +102,8 @@ function App() {
       
     </main>
     </Routes> */}
+
+
     <footer>
       <div className="tag">
           <Footer />

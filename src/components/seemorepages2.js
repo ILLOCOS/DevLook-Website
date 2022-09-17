@@ -8,6 +8,8 @@ import wc4 from '../components/Images/wcc4.gif';
 import wc2 from '../components/Images/wcc2.gif';
 import wc1 from '../components/Images/wc1.gif';
 import wc5 from '../components/Images/wcc5.gif';
+import TestiMonials from './TestiMonials';
+import Button from 'react-bootstrap/Button';
 
 function ClientInfo() {
   return (
@@ -50,7 +52,13 @@ function ClientInfo() {
           </Stack>
         </Col>
       </Row>
-
+      <Row>
+        <Col lg={12}>
+         <Button  variant="light" className='tabbtn' id='tabbtn'>
+             HIRE A TALENT NOW! <i class="fa fa-handshake-o" > </i>
+          </Button>
+        </Col>
+      </Row>
           <Row>
             <Col lg={true}>
               <img src={wc2} className="w-gif" responsive />
@@ -98,6 +106,9 @@ function ClientInfo() {
 
         </Container>
         
+    </div>
+    <div className='cont3'>
+       <TestiMonials></TestiMonials>
     </div>
     </div>
   );
@@ -105,53 +116,59 @@ function ClientInfo() {
 
 function TalentInfo() {
     return (
-      <div className='hero2'>
-      <div className='contt'>
-        <Container>
-          <Row id="cl-why">
-            <Col lg={true} className="head">
-              <h1 >WHY WORK WITH US?  </h1>
-              <h2>You can have the best people. Right here. Right now!</h2>
-            </Col>
-          </Row>
-          <br/>
-          <Row>
-            <Col lg={true}><h3 className='s-head'>Blending Innovation in the Right Portion!</h3></Col>
-          </Row>
-          
-          <Row>
+<div className='hero2'>
+    <div className='contt'>
+          <Container>
+            <Row id="cl-why">
+              <Col lg={true} className="head">
+                <h1 >WHY WORK WITH US?  </h1>
+                <h2>You can have the best people. Right here. Right now!</h2>
+              </Col>
+            </Row>
+            <br/>
+            <Row>
+              <Col lg={true}><h3 className='s-head'>Blending Innovation in the Right Portion!</h3></Col>
+            </Row>
+            
+            <Row>
+            <Col lg={true}>
+              <Stack gap={1}>
+                <div className="stackk "> <i class="fa fa-check-square-o" aria-hidden="true"></i> LEARN AS YOU WORK
+                  <p className="stack-p"> Quantacell has by far the largest pool of quality freelancers globally- over 50 million to choose from. Connect to freelancers with proven business experience, work with in-demand global talent who are at the top of their field! </p>
+                </div>
+                
+                <div className="stackk "> <i class="fa fa-check-square-o" aria-hidden="true"></i> GROW YOUR CAREER
+                <p className="stack-p"> Use our collaboration tools to work efficiently with your freelancer. Share files, chat in real-time, monitor progress, and so much more. Keep up-to-date and on-the-go with our time tracker, be in control and keep in contact.</p>
+                </div>
+            </Stack>
+              </Col>
           <Col lg={true}>
-            <Stack gap={1}>
-              <div className="stackk "> <i class="fa fa-check-square-o" aria-hidden="true"></i> LEARN AS YOU WORK
-                <p className="stack-p"> Quantacell has by far the largest pool of quality freelancers globally- over 50 million to choose from. Connect to freelancers with proven business experience, work with in-demand global talent who are at the top of their field! </p>
-              </div>
-              
-              <div className="stackk "> <i class="fa fa-check-square-o" aria-hidden="true"></i> GROW YOUR CAREER
-              <p className="stack-p"> Use our collaboration tools to work efficiently with your freelancer. Share files, chat in real-time, monitor progress, and so much more. Keep up-to-date and on-the-go with our time tracker, be in control and keep in contact.</p>
-              </div>
-          </Stack>
-            </Col>
-        <Col lg={true}>
-        <Stack gap={1}>
+          <Stack gap={1}>
 
-              <div className="stackk "> <i class="fa fa-check-square-o" aria-hidden="true"></i>  LET THE WORK FIND YOU
-              <p className="stack-p"> We are here to help match you with the best talent for your team! Find professionals you can trust by browsing their portfolios and reading their profile reviews. We will provide a pre-vetted shortlist of the best matches from our global talent community. </p>
-              </div>
-              
-              <div className="stackk "> <i class="fa fa-check-square-o" aria-hidden="true"></i> FIND SUPPORT
-              <p className="stack-p"> Quantacell is a community that values your trust and safety as our number one priority. Our round-the-clock support team is available to help and assist you with any issues anytime, anywhere. </p>
-              </div>
-          </Stack>
+                <div className="stackk "> <i class="fa fa-check-square-o" aria-hidden="true"></i>  LET THE WORK FIND YOU
+                <p className="stack-p"> We are here to help match you with the best talent for your team! Find professionals you can trust by browsing their portfolios and reading their profile reviews. We will provide a pre-vetted shortlist of the best matches from our global talent community. </p>
+                </div>
+                
+                <div className="stackk "> <i class="fa fa-check-square-o" aria-hidden="true"></i> FIND SUPPORT
+                <p className="stack-p"> Quantacell is a community that values your trust and safety as our number one priority. Our round-the-clock support team is available to help and assist you with any issues anytime, anywhere. </p>
+                </div>
+            </Stack>
+          </Col>
+        </Row>
+        <Row>
+        <Col lg={12}>
+         <Button  variant="light" className='tabbtn' id='tabbtn'>
+             JOIN THE TEAM NOW!  <i class=" fa fa-users"> </i>
+          </Button>
         </Col>
       </Row>
-
-          <Row>
-            <Col lg={true}>
-              <img src={wc2} className="w-gif" responsive />
-            </Col>
-          </Row>
-          </Container>
- </div> 
+            <Row>
+              <Col lg={true}>
+                <img src={wc2} className="w-gif" responsive />
+              </Col>
+            </Row>
+            </Container>
+     </div> 
     <div className='cont2'>
     <Container>
           <Row id="cl-how">
@@ -193,7 +210,11 @@ function TalentInfo() {
         </Container>
         
     </div>
+
+    <div className='cont3'>
+       <TestiMonials></TestiMonials>
     </div>
+  </div>
     );
   }
 
