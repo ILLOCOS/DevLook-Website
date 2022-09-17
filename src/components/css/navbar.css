@@ -106,7 +106,18 @@
     align-items: center!important;
 } */
 
-.navbar-toggler {
-    color: white;
+.navbar-toggler , .navbar-toggler-icon  {
+    color: #030332 !important; ;
+    border-color: white !important;
+    background-color: white !important;
+}
+
+.navbar-toggler-icon {
+    
     border-color: white;
+   
+}
+
+.navbar-toggler span {
+     color:#030332 !important;;
 }
