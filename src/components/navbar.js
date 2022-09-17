@@ -11,13 +11,10 @@ import React from 'react';
 import logoo1 from '../components/Images/logoo2.png'
 import Image from 'react-bootstrap/Image'
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
+import Login from './Login2';
+import Register from './Register';
+import FormValidator from './FormValidator';
 
-import Login from './Login2'
-
-
-=======
->>>>>>> d3dc93de5e44ea0ca2ace4b424500915288125f7
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal
@@ -32,17 +29,17 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-<<<<<<< HEAD
-      <Login />
-=======
         {/* <h4>Centered Modal</h4>
         <p>
           Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
           dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
           consectetur ac, vestibulum at eros.
         </p> */}
-        <login />
->>>>>>> d3dc93de5e44ea0ca2ace4b424500915288125f7
+
+        <Login />
+        <Register />
+        <FormValidator />
+      
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -125,4 +122,6 @@ function Navbarr() {
 }
 
 export default Navbarr;
+
+
 
