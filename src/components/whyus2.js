@@ -33,15 +33,15 @@ function Feat1p2() {
     </Col>
       </Row>
       <br/>
-      <Row>
+      {/* <Row>
         <button  className="seebtn"  onClick={() =>{
           navigate("/seemore");
         }} >
           See More
         </button>
 
-      </Row> 
-      <br/> <br/>
+      </Row>  
+      <br/> */}<br/>
     </Container>
 
     

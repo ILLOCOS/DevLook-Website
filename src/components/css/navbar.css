@@ -1,5 +1,6 @@
 
 
+
 .h-navbar {
     background-color: #030332;
     position: fixed;
@@ -9,6 +10,10 @@
     align-items: center;
     /* margin-top:-20px; */
 } 
+
+.navbar {
+    position: fixed !important;
+}
 
 .logo {
     height: auto;
@@ -100,3 +105,8 @@
     -ms-flex-align: center!important;
     align-items: center!important;
 } */
+
+.navbar-toggler {
+    color: white;
+    border-color: white;
+}

@@ -256,7 +256,7 @@
     border-color: #f20091;
     color: white;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-shadow: 3px 3px 4px #0a0a0a97;
 }
 
@@ -267,4 +267,20 @@
     /* padding: 5px; */
     font-weight: 500;
     color: white
+}
+
+@media screen and (max-width: 576px) {
+    #tabbtn {
+    width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    #tabbtn {
+    margin-left: 60%;
+    }
+}
+@media (max-aspect-ratio: 16 / 9) {
+#tabbtn {
+      margin-left: 70%;
+    }
 }
